@@ -7046,6 +7046,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "tracing-log"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ee855f1f400bd0e5c02d150ae5de3840039a3f54b025156404e34c23c03f47c3"
+dependencies = [
+ "log",
+ "once_cell",
+ "tracing-core",
+]
+
+[[package]]
 name = "tracing-opentelemetry"
 version = "0.21.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -7057,7 +7068,7 @@ dependencies = [
  "smallvec",
  "tracing",
  "tracing-core",
- "tracing-log",
+ "tracing-log 0.1.4",
  "tracing-subscriber",
 ]
 
@@ -7089,7 +7100,7 @@ dependencies = [
  "time",
  "tracing",
  "tracing-core",
- "tracing-log",
+ "tracing-log 0.1.4",
  "tracing-serde",
 ]
 
@@ -8132,6 +8143,33 @@ dependencies = [
  "serde_json",
  "strum",
  "web3",
+]
+
+[[package]]
+name = "zksync_batch_verifier"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "ciborium",
+ "multivm",
+ "tokio",
+ "tracing",
+ "tracing-log 0.2.0",
+ "tracing-subscriber",
+ "vm_utils",
+ "zksync_basic_types",
+ "zksync_config",
+ "zksync_crypto",
+ "zksync_dal",
+ "zksync_db_connection",
+ "zksync_merkle_tree",
+ "zksync_object_store",
+ "zksync_prover_interface",
+ "zksync_queued_job_processor",
+ "zksync_state",
+ "zksync_tee_verifier",
+ "zksync_types",
+ "zksync_utils",
 ]
 
 [[package]]

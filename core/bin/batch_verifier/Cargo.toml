@@ -1,0 +1,35 @@
+[package]
+name = "zksync_batch_verifier"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+homepage.workspace = true
+repository.workspace = true
+license.workspace = true
+keywords.workspace = true
+categories.workspace = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio.workspace = true
+zksync_tee_verifier.workspace = true
+zksync_object_store.workspace = true
+zksync_config.workspace = true
+zksync_basic_types.workspace = true
+anyhow.workspace = true
+ciborium.workspace = true
+tracing.workspace = true
+tracing-log = "0.2"
+tracing-subscriber.workspace = true
+vm_utils.workspace = true
+zksync_crypto.workspace = true
+zksync_dal.workspace = true
+zksync_db_connection.workspace = true
+zksync_merkle_tree.workspace = true
+zksync_prover_interface.workspace = true
+zksync_queued_job_processor.workspace = true
+zksync_state.workspace = true
+zksync_types.workspace = true
+zksync_utils.workspace = true
+multivm.workspace = true
